@@ -1,0 +1,383 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+<style>
+
+body {
+  margin-top:0px;
+  margin-bottom:0px;
+}
+.main_container {
+  margin:auto;
+  width:90%;
+  height:100vh;
+  display:flex;
+  
+  animation: fadeIn 1s;
+  -webkit-animation: fadeIn 1s;
+  -moz-animation: fadeIn 1s;
+  -o-animation: fadeIn 1s;
+  -ms-animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+.left_side {
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+}
+
+.right_side {
+  width:450px;
+  height:100%;
+  border-left:3px solid black;
+  border-right:3px;
+  overflow-y:overlay;
+}
+
+.site_title {
+  height:100%;
+  border-bottom:3px solid black;
+  display:flex;
+  align-items:center;
+}
+
+.def_title {
+  min-height:234px;
+  height:31vh;
+  font-family:'Raleway';
+}
+
+.titler {
+  font-size: 10vw;
+    font-weight: bold;
+    font-family: 'Raleway';
+}
+
+.word_box {
+  padding-top:15px;
+  transition:1s;
+}
+#word {
+  font-size:50px;
+  font-weight:bold;
+  display:inline;
+ 
+}
+#pos {
+font-size:20px;
+font-weight:lighter;
+font-style:italic;
+display:inline;
+}
+
+#def_box {
+  margin-top:20px;
+  margin-bottom:20px;
+}
+.def {
+  font-weight:normal;
+  font-size:24px;
+}
+
+.rs_flex {
+  display:grid;
+  overflow-y:overlay;
+  flex-direction:column;
+  font-family:'Raleway';
+
+}
+
+.author_box {
+  border-bottom:2px solid black;
+padding:20px;
+}
+
+
+.author_box2 {
+  border-bottom:2px solid black;
+padding:20px;
+border-top:2px solid black;
+}
+
+.author_rus {
+  font-size:35px;
+  font-weight:bold;
+}
+
+.author_box:hover {
+  cursor:default;
+}
+
+
+.author_box2:hover {
+  cursor:default;
+}
+
+.author_en {
+  font-size:25px;
+  font-weight:lighter;
+}
+.book_box {
+  border-bottom:1px solid black;
+  padding:20px;
+  padding-left:40px;
+}
+
+.book_ru {
+font-size:19px;
+font-weight:normal;
+}
+
+.book_en {
+font-size:18px;
+font-weight:lighter;
+}
+
+.author_box:hover  {
+  background:black;
+  color:white;
+
+}
+
+.author_box2:hover  {
+  background:black;
+  color:white;
+
+}
+
+.book_box:hover {
+  background:black;
+  color:white;
+}
+
+.rs_flex a {
+  color:black;
+  text-decoration:none;
+}
+
+.rs_flex a:visited {
+  color:black;
+  text-decoration:none;
+}
+
+.rs_flex a:hover {
+  color:white;
+  background:black;
+}
+
+.right_side::-webkit-scrollbar {
+    width: 9px;
+    height: 8px;
+}
+
+.right_side::-webkit-scrollbar-thumb {
+    background: #f2f2f2;
+}
+
+@media screen and (max-width: 780px) {
+
+.main_container {
+  flex-direction:column;
+}
+
+#def_box {
+  margin-top:0px;
+  margin-right:0px;
+  
+}
+
+.titler {
+  padding-bottom:13px;
+  font-size:61px;
+
+}
+
+#pos {
+  display:none;
+}
+
+.right_side {
+  width:100%;
+  border-left:none;
+  
+}
+
+.site_title {
+  border-bottom:none;
+  height:auto;
+  padding-top:50px;
+}
+
+.left_side {
+  height:auto;
+}
+
+.def_title {
+  min-height:auto;
+  height:auto;
+  padding-bottom:30px;
+  border-bottom:3px solid black;
+}
+
+#word{
+  font-size:40px;
+}
+.def {
+  font-size:23px;
+}
+}
+
+
+</style>
+</head>
+
+<body>
+<div class='main_container'>
+<div class='left_side'>
+<div class='site_title'>
+<div class='titler'>
+Русские Классики
+</div>
+</div>
+<div class='def_title'>
+<div class="word_box"><div id="word">Russian Classics</div>
+<div id="pos">translator</div></div>
+<div id="def_box"><div class="def">Click-to-translate Russian classics</div></div>
+</div></div>
+
+
+
+<div class='right_side'>
+
+<div class='rs_flex'>
+<div class='author_box'>
+<div class='author_rus'>Достоевский</div>
+<div class='author_en'>Dostoevsky</div>
+</div>
+<a href="{% url 'pf' %}">
+<div class='book_box'>
+<div class='book_ru'>Бедные люди
+</div>
+<div class='book_en'>Poor Folk</div>
+</div></a>
+
+
+<a href="{% url 'bk' %}">
+<div class='book_box'>
+<div class='book_ru'>Братья Карамазовы
+</div>
+<div class='book_en'>The Brothers Karamazov</div>
+</div></a>
+
+<a href="{% url 'demons' %}">
+<div class='book_box'>
+<div class='book_ru'>Бесы
+</div>
+<div class='book_en'>Demons</div>
+</div></a>
+
+
+
+<a href="{% url 'nhd' %}">
+<div class='book_box'>
+<div class='book_ru'>Записки из мертвого дома
+
+</div>
+<div class='book_en'>The House of the Dead</div>
+</div></a>
+
+
+<a href="{% url 'nu' %}">
+<div class='book_box'>
+<div class='book_ru'>Записки из подполья
+</div>
+<div class='book_en'>Notes from Underground</div>
+</div></a>
+
+<a href="{% url 'idiot' %}">
+<div class='book_box'>
+<div class='book_ru'>Идиот
+</div>
+<div class='book_en'>The Idiot</div>
+</div></a>
+
+<a href="{% url 'main_page' %}">
+<div class='book_box'>
+<div class='book_ru'>Преступление и наказание</div>
+<div class='book_en'>Crime and Punishment</div>
+</div></a>
+<div class='author_box2'>
+<div class='author_rus'>Толстой</div>
+<div class='author_en'>Tolstoy</div>
+</div>
+
+<a href="{% url 'ak' %}">
+<div class='book_box'>
+<div class='book_ru'>Анна Каренина</div>
+<div class='book_en'>Anna Karenina</div>
+</div></a>
+
+
+
+<a href="{% url 'wp' %}">
+<div class='book_box'>
+<div class='book_ru'>Война и мир</div>
+<div class='book_en'>War and Peace</div>
+</div></a>
+
+
+<a href="{% url 'ispo' %}">
+<div class='book_box'>
+<div class='book_ru'>Исповедь</div>
+<div class='book_en'>A Confession</div>
+</div></a>
+<a href="{% url 'dii' %}">
+<div class='book_box'>
+<div class='book_ru'>Смерть Ивана Ильича</div>
+<div class='book_en'>The Death of Ivan Ilyich</div>
+</div></a>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+</body>
