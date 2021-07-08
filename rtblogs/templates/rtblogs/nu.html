@@ -34,7 +34,7 @@ body {
 }
 
 .rt_frame {
-height: 31vh;
+
     width: 80%;
     position: fixed;
     bottom: 0;
@@ -42,7 +42,8 @@ height: 31vh;
     border-top: 3px solid black;
     margin: auto;
     overflow-y:overlay;
-    min-height:234px;
+    height:234px;
+    max-height:50%;
 }
 
 
@@ -302,6 +303,17 @@ padding-top:50px;
   width:80%;
   margin:auto;
 }
+
+@media screen and (max-width: 750px) {
+pre {
+    font-size: 15px;
+    line-height: 38px;
+    font-family: 'Raleway';
+    margin-inline-start: 0px;
+}
+
+}
+
 </style>
 </head>
 <div class='splash'>
